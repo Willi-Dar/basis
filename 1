@@ -1,0 +1,82 @@
+#include<iostream>
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+
+int x,y,pil,hasil;
+float a,b,hasil1;
+
+
+int main (){
+	system("cls");
+	cout<<"         Kalculator Warung       "<<endl<<endl;
+	cout<<"Pilih Operasi Yang Ingin Digunakan"<<endl;
+	cout<<"1. Penjumlahan"<<endl;
+	cout<<"2. Pengurangan"<<endl;
+	cout<<"3. Perkalian"<<endl;
+	cout<<"4. Pembagian"<<endl;
+	cout<<"5. Perpangkatan"<<endl;
+	cout<<"6. Akar Pangkat Dua"<<endl;
+	cout<<"Pilihan Anda : ";
+		cin>>pil;
+	if (pil==1)
+	{
+		cout<<"Masukan Bilangan Pertama : "; 
+		cin>>x;
+		cout<<"Masukan Bilangan Kedua   : "; 
+		cin>>y;
+		hasil=x+y;
+		cout<<x<<"+"<<y<<"= "<<hasil;
+	}
+	else if (pil==2)
+	{
+		cout<<"Masukan Bilangan Pertama : "; 
+		cin>>x;
+		cout<<"Masukan Bilangan Kedua   : "; 
+		cin>>y;
+		hasil=x-y;
+		cout<<x<<"-"<<y<<"= "<<hasil;
+	}
+	else if (pil==3)
+	{
+		cout<<"Masukan Bilangan Pertama : "; 
+		cin>>x;
+		cout<<"Masukan Bilangan Kedua   : "; 
+		cin>>y;
+		hasil=x*y;
+		cout<<x<<"*"<<y<<"= "<<hasil;
+	}
+	else if (pil==4)
+	{
+		cout<<"Masukan Bilangan Pertama : "; 
+		cin>>x;
+		cout<<"Masukan Bilangan Kedua   : "; 
+		cin>>y;
+		hasil=x/y;
+		cout<<x<<"/"<<y<<"= "<<hasil;
+	}
+	else if (pil==5)
+	{
+	 	cout<<"Masukan bilangan : ";
+	 	cin>>a;
+		cout<<"Masukan pangkat : ";
+	 	cin>>b;
+	 	int hasil=1;
+		for(int i=1;i<=b;i++)
+		hasil*=a;
+	 	cout<<"Hasil "<<a<<" pangkat "<<b<<" = "<<hasil<<endl;
+	}
+	else if (pil==6)
+	{
+	  cout<<"Masukan bilangan : ";
+	  cin>>a;
+	  hasil=sqrt(a);
+	  cout<<"Hasil akar pangkat dua = "<<hasil<<endl;
+	}
+	else 
+	{	cout<<endl;
+		cout<<"Maaf Pilihan Anda Tidak Sesuai, Mohon Pilih Dengan Sesuai"<<endl;
+	}
+	getch();
+}
